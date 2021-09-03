@@ -1,9 +1,10 @@
-  "nombre" : "vicu",
-  " versión " : " 0.0.0 " ,
+ {
+  " nombre " : "vicu",
+  " versión " : "0.0.01" ,
   " descripción " : " " ,
-  " main " : "Juan.js " ,
+  " main " : "Juan.js" ,
   " scripts " : {
-  " inicio " : "Juan.js "
+  " inicio " : "Juan.js"
   },
   " dependencias " : {
     " @ adiwajshing / baileys " : " ^ 3.4.1 "
