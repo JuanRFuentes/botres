@@ -1,26 +1,26 @@
-const  { WAConnection }  =  require ( '@ adiwajshing / baileys' ) ;
-const  fs  =  require ( 'fs' ) ;
+const { WAConnection } = require('@adiwajshing/baileys');
+const fs = require('fs');
 
- función  asíncrona iniciar  ( )  { 
-         cliente  constante =  nueva  conexión WAC ( )
+async function iniciar () { 
+        const client = new WAConnection()
 
-        cliente . registrador . nivel  =  'advertir'
+        client.logger.level = 'warn'
 
-        cliente . en ( 'qr' ,  ( )  =>  {
-        } )
+        client.on('qr', () => {
+        })
 
-        fs . existeSync ( './Samu330.json' )  &&  cliente . loadAuthInfo ( './Samu330.json' )
+        fs.existsSync('./Samu330.json') && client.loadAuthInfo('./Samu330.json')
 
-        cliente . on ( 'conectando' ,  ( )  =>  {
-        consola . log ( 'Conectando' )
-        } )
+        client.on('connecting', () => {
+        console.log('Conectando')
+        })
 
-        cliente . en ( 'abrir' ,  ( )  =>  {
-        consola . log ( 'Conectado exitosamente: D' )
-        } )
-        esperar al  cliente . conectar ( { timeoutMs : 30 * 1000 } )
-        fs . writeFileSync ( './Samu330.json' ,  JSON . stringify ( cliente . base64EncodedAuthInfo ( ) ,  nulo ,  '\ t' ) )
+        client.on('open', () => {
+        console.log('Conectado exitosamente :D')
+        })
+        await client.connect({timeoutMs: 30*1000})
+        fs.writeFileSync('./Samu330.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
         }
 
-iniciar  ( )
-. catch  ( err  =>  console . log ( "error inesperado:"  +  err ) )
+iniciar ()
+.catch (err => console.log("unexpected error: " + err))
