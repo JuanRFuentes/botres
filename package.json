@@ -1,10 +1,10 @@
  {
   "name": "Nombre",
-  "version": "0.0.0",
+  "version": "8.8.0",
   "description": "",
-  "main": "Juan.js",
+  "main": "juan.js",
   "scripts": {
-  "start": "Juan.js"
+  "start": "juan.js"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^3.4.1"
