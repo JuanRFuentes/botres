@@ -1,12 +1,12 @@
  {
-  " nombre " : "vicu",
-  " versión " : "0.0.01" ,
-  " descripción " : " " ,
-  " main " : "Juan.js" ,
-  " scripts " : {
-  " inicio " : "Juan.js"
+  "name": "Nombre",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Juan.js",
+  "scripts": {
+  "start": "Juan.js"
   },
-  " dependencias " : {
-    " @ adiwajshing / baileys " : " ^ 3.4.1 "
+  "dependencies": {
+    "@adiwajshing/baileys": "^3.4.1"
   }
 }
