@@ -1,0 +1,11 @@
+  "nombre" : "vicu",
+  " versión " : " 0.0.0 " ,
+  " descripción " : " " ,
+  " main " : " Conexion.js " ,
+  " scripts " : {
+  " inicio " : " Conexion.js "
+  },
+  " dependencias " : {
+    " @ adiwajshing / baileys " : " ^ 3.4.1 "
+  }
+}
